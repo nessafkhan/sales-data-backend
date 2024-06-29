@@ -14,7 +14,7 @@ connectDB();
 app.use(express.json());
 
 // routes
-app.use('/api/data', salesRoutes);
+app.use('/api/sales', salesRoutes);
 app.use('/api/analysis', analysisRoutes);
 
 //schedule refresh cron
