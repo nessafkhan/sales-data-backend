@@ -17,5 +17,8 @@ app.use(express.json());
 app.use('/api/data', salesRoutes);
 app.use('/api/analysis', analysisRoutes);
 
+//schedule refresh cron
+scheduleDataRefresh();
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
