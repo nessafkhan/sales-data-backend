@@ -7,7 +7,7 @@ exports.uploadCSV = upload.single('file');
 
 /**
  * POST: 
- * Process the csv file using fs module
+ * Process the csv file using fs module and csv-parser
  * Store the processed data in DB
  * @param {Request} req 
  * @param {Response} res 

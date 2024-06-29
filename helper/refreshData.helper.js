@@ -1,9 +1,9 @@
 const csv = require('csv-parser');
 const fs = require('fs');
-const Order = require('../models/Order');
-const Product = require('../models/Product');
-const Customer = require('../models/Customer');
 const mongoose = require('mongoose');
+const Order = require('../models/order.model');
+const Product = require('../models/product.model');
+const Customer = require('../models/customer.model');
 
 /**
  * Read the data from csv
